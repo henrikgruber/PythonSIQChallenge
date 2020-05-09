@@ -1,0 +1,7 @@
+Write a program that reads 3 integers and prints their sum.
+
+You have the basic structure below / Note that # is a comment and should be removed
+
+# a = input()
+# Print a string:
+# print(a)
