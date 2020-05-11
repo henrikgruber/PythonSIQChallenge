@@ -7,13 +7,12 @@ import matplotlib.pyplot as plt
 # squarify is necessary for creating a treemap diagram
 import squarify as sq
 
-def write_survey_results(p_canton, p_age, p_survey, p_points):
-    #Write results of a taken survey
-    df_write = pandas.DataFrame({'\n\nSurvey': [p_survey],
-                       'Canton': [p_canton],
-                       'Age': [p_age],
-                       'Points': [p_points]})
-    df_write.to_csv('survey_results.csv', mode='a', header=False,index=False)
+def write_results(p_person,p_area,p_confidence,p_date):
+    df_write = pandas.DataFrame({'\n\nPerson': [p_person],
+                       'Area': [p_area],
+                       'Confidence': [p_confidence],
+                       'Date': [p_date]})
+    df_write.to_csv('tracking_results.csv', mode='a', header=False,index=False)
     return
 
 def create_diagrams():

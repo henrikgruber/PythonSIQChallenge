@@ -1,5 +1,3 @@
-#for installing missing modules
-import import_modules
 
 #calls to survey.py due to: initialization, survey taking, 
 #   evaluation of results 
@@ -8,18 +6,15 @@ import survey
 #contains a tuple, consisting of (v_which_canton, v_age, inp_survey)
 global inp_survey
 
-# (0) install potential missing modules
-import_modules.auto_install()
 
 
-# (1) Welcome to Sporty-Healthy Checker
+# (1) Welcome to the App
 #   http://asciiflow.com/ has been used to create the ascii-pics
 
 print("")
 print("")
 print("")
-print("         Welcome to the Health Check App")
-print("           Get healthy, STAY HEALTHY")
+print("         Welcome to the our Progress Tracking App")
 print("")
 print("                   ,++./,+.")
 print("                  / #      \ ")
@@ -30,19 +25,19 @@ print("")
 print("")
 print("+------------------------------------------------------+")
 print("| EXPLANATION                                          |")
-print("| * You will be able to choose from different surveys  |")
-print("| * We just need your age and the canton you live in   |")
+print("| * Choose a Name                                      |")
+print("| * choose an area you just practised                  |")
+print("| * choose how confident you were about your task      |")
 print("|                                                      |")
-print("| --> Based on the result you will be given advice <-- |")
+print("| --> results will be stored for your tracking <--     |")
 print("|                                                      |")
 print("+------------------------------------------------------+")
 print("")      
-input("Let us start the survey. Hit any key. ")
+input("Let us start. Hit any key. ")
 
 
-# (2) Initialize the survey with details about the participant as well
-#   as the choice of survey
-inp_survey = survey.initialize_survey()
+
+v_initialize_category = Setup.initialize_category()
 
 # (3) Perform the actual survey. Question by question.
 #   Parameter "inp_survey[2]" stands for the survey which has been chosen
