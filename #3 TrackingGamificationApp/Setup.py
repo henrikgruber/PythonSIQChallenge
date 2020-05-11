@@ -24,4 +24,29 @@ def initialize_category():
     return v_topic
 
 
-print(initialize_category())
+def initialize_person():
+    while True:
+        try:
+            v_name = upper(input("Please enter your Name: "))
+            break;
+        except:
+            print("Please enter a valid name!")    
+    return v_name
+
+def initialize_confidence():
+    v_confidence = 0
+    print("Please enter your confidence on a scale from 1 (oh oh) to 4 (great)")
+    print("")
+    #skip the header row
+    while True:
+        try:
+            v_confidence = input()
+            if int(v_confidence) in range(1, 5):
+                break;
+            else:
+                print('Please try again. Enter a number between 1-4')
+        except:
+            print("You did not enter a number. Please enter 1-4")
+    return v_confidence
+
+initialize_confidence()

@@ -7,61 +7,39 @@ import matplotlib.pyplot as plt
 # squarify is necessary for creating a treemap diagram
 import squarify as sq
 
-def write_results(p_person,p_area,p_confidence,p_date):
+def write_results(p_person,p_category,p_confidence,p_date):
     df_write = pandas.DataFrame({'\n\nPerson': [p_person],
-                       'Area': [p_area],
+                       'Category': [p_category],
                        'Confidence': [p_confidence],
                        'Date': [p_date]})
     df_write.to_csv('tracking_results.csv', mode='a', header=False,index=False)
     return
 
 def create_diagrams():
-    survey_results = pandas.read_csv('survey_results.csv')
+    tracking_results = pandas.read_csv('tracking_results.csv')
     
     print("")
     print("")
-    print("Additionally, you'll find some diagrams about the survey you've just participated in.")
+    print("Additionally, you'll find some diagrams about our stored data.")
     print("")
     
-# part 1 - Create histogram 
-    plt.hist(
-    
-        #using Age
-        survey_results['Age'],     
-        #plotting it by age ranges
-        bins=(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100),     
-        #with width
-        rwidth=0.9,     
-        #with color
-        color='blue')
-
-    #Set labels
-    plt.ylabel('Number of People')
-    plt.xlabel('Age')
-    plt.title('Age Distribution')
-
-    #View the plot
-    plt.show()
         
-
 # part 2 - Creating a treemap to show distribution 
-    # Showing distribution of cantons
-    # sum the instances of cantons
-    survey_results_grouped = survey_results.groupby("Canton", as_index=False)["Points"].sum()
-    sq.plot(sizes=survey_results_grouped['Points'], label=survey_results_grouped['Canton'], alpha=.8 )
+    results_grouped = tracking_results.groupby("Category", as_index=False)["Confidence"].sum()
+    sq.plot(sizes=results_grouped['Confidence'], label=results_grouped['Category'], alpha=.8 )
     # Hiding axis
     plt.axis('off')
     # Set labels
-    plt.title("Cantons points gained")
+    plt.title("Confidence per Category")
     #View the plot
     plt.show()
 
 # part 3 - piechart 
     #grouped by surveys, build the sum
-    results_by_survey = survey_results.groupby("Survey", as_index=False)["Points"].sum()
+    results_by_area = tracking_results.groupby("Category", as_index=False)["Confidence"].count()
     # sum the instances of A (position 0) and B (position 1)
-    A_results = results_by_survey.loc[0,"Points"]
-    B_results = results_by_survey.loc[1,"Points"]
+    A_results = results_by_area.loc[0,"Confidence"]
+    B_results = results_by_area.loc[1,"Confidence"]
     # put them into a list called proportions
     proportions = [A_results, B_results]    
 
@@ -70,7 +48,7 @@ def create_diagrams():
         proportions,
 
         # with the labels being names
-        labels = ['Survey A', 'Survey B'],
+        labels = ['A', 'B'],
 
         # with no shadows
         shadow = False,
@@ -91,9 +69,11 @@ def create_diagrams():
     # View the plot drop above
     plt.axis('equal')
     # Set labels
-    plt.title("Points achieved in both surveys")
+    plt.title("Points achieved in areas")
     # View the plot
     plt.tight_layout()
     plt.show()
     
     return
+
+create_diagrams()

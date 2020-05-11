@@ -1,2 +1,5 @@
-Person,Area,Confidence,Date
+Person,Category,Confidence,Date
 Henrik,Basic Syntax,4,11.05.2020
+Henrik,Exceptions,4,11.05.2020
+Henrik,Exceptions,2,11.05.2020
+Henrik,Exceptions,2,11.05.2020

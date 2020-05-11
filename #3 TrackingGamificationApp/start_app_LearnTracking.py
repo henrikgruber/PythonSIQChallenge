@@ -36,28 +36,14 @@ print("")
 input("Let us start. Hit any key. ")
 
 
-
-v_initialize_category = Setup.initialize_category()
-
-# (3) Perform the actual survey. Question by question.
-#   Parameter "inp_survey[2]" stands for the survey which has been chosen
-write_points = survey.take_survey(inp_survey[2])
-
-# (4) Show the grade, healthy or suggestion for medical support.
-#   In case the health result is poor, doctor suggestions from the appropriate
-#   canton are being shown.
-#   Parameter "inp_survey[0]" stands for the participants' canton
-survey.final_result(write_points,inp_survey[0])
+# (1) initialize all data
+v_category = setup.initialize_person()
+v_confidence = setup.initialize_confidence()
+v_category = Setup.initialize_category()
 
 
-# (5) Survey results are being written persistantly into a file
-#   calls to results.py due to: writing the results into a file, 
-#   creating diagrams for the participants
-import results
-#   Parameter "inp_survey[0]" = canton, "inp_survey[1]" = age of 
-#   the participant, "inp_survey[2]" = Survey taken
-#   write_point = amount of points accumulated in this survey
-results.write_survey_results(inp_survey[0],inp_survey[1],inp_survey[2],write_points)
+# (3) write results
+setup.write_results(p_person,v_category,p_confidence,p_date):
 
 # (6) Plot statistical results via diagrams
 results.create_diagrams()
