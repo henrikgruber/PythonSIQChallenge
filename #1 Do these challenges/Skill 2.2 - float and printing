@@ -1,0 +1,13 @@
+# write a small program that Converts Fahrenheit to Celsius
+
+# Fahrenheit to Celsius formula:
+#(°F - 32) x 5/9 = °C or in plain english, First subtract 32, then multiply by 5,
+#then divide by 9.
+
+# Celsius to Fahrenheit formula:
+# (°C × 9/5) + 32 = °F or in plain English, Multiple by 9, then divide by 5, then add 32.
+
+If you don't know how to start solving this assignment, please, review a theory for this lesson:
+https://www.learnpython.org/en/Variables_and_Types
+You may also try step-by-step theory chunks:
+https://snakify.org/lessons/integer_float_numbers/

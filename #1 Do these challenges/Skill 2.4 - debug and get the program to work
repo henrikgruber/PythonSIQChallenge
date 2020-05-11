@@ -1,0 +1,18 @@
+# debug the below code so it works
+
+mystring = hello
+myfloat = 10.0
+myint = 20.01
+
+# testing code
+if mystring = "hello":
+    print("String: %f" % mystring)
+if isinstance(myfloat, float) and myfloat = 10.0:
+    print("Float: " myfloat)
+if isinstance(myint, int) and myint = 20:
+    print("Integer: %s" myint)
+
+If you don't know how to start solving this assignment, please, review a theory for this lesson:
+https://www.learnpython.org/en/Variables_and_Types
+You may also try step-by-step theory chunks:
+https://snakify.org/lessons/integer_float_numbers/
