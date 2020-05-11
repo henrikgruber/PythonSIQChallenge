@@ -24,6 +24,7 @@ def initialize_category():
     return v_topic
 
 
+
 def initialize_person():
     return input("Please enter your Name: ").upper()
 
