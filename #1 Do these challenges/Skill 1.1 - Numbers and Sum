@@ -5,3 +5,4 @@ You have the basic structure below / Note that # is a comment and should be remo
 # a = input()
 # Print a string:
 # print(a)
+NOTE: Python is syntax sensitive - that means that you have to use TAB for code indentation - eg. if you put a space before print(a) the code execution will fail
