@@ -25,18 +25,11 @@ def initialize_category():
 
 
 def initialize_person():
-    while True:
-        try:
-            v_name = upper(input("Please enter your Name: "))
-            break;
-        except:
-            print("Please enter a valid name!")    
-    return v_name
+    return input("Please enter your Name: ").upper()
 
 def initialize_confidence():
     v_confidence = 0
     print("Please enter your confidence on a scale from 1 (oh oh) to 4 (great)")
-    print("")
     #skip the header row
     while True:
         try:
@@ -48,5 +41,3 @@ def initialize_confidence():
         except:
             print("You did not enter a number. Please enter 1-4")
     return v_confidence
-
-initialize_confidence()

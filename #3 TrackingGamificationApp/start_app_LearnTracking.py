@@ -1,10 +1,7 @@
+import setup
+import results
+import datetime
 
-#calls to survey.py due to: initialization, survey taking, 
-#   evaluation of results 
-import survey
-
-#contains a tuple, consisting of (v_which_canton, v_age, inp_survey)
-global inp_survey
 
 
 
@@ -37,13 +34,16 @@ input("Let us start. Hit any key. ")
 
 
 # (1) initialize all data
-v_category = setup.initialize_person()
+v_person = setup.initialize_person()
+v_category = setup.initialize_category()
 v_confidence = setup.initialize_confidence()
-v_category = Setup.initialize_category()
 
 
 # (3) write results
-setup.write_results(p_person,v_category,p_confidence,p_date):
+results.write_results(v_person,v_category,v_confidence,datetime.datetime.now().strftime("%y-%m-%d-%H-%M"))
 
 # (6) Plot statistical results via diagrams
 results.create_diagrams()
+
+# (7) motivational booster
+results.motivational_booster()

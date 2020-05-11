@@ -76,4 +76,22 @@ def create_diagrams():
     
     return
 
-create_diagrams()
+def motivational_booster():
+    print("")
+    print("")
+    print("Keep up the good work")
+    print("")
+    print("")
+    print("")
+    print("           ___________                ")
+    print("          '._==_==_=_.'               ")
+    print("          .-\:      /-.               ")
+    print("         | (|:.     |) |              ")
+    print("          '-|:.     |-'               ")
+    print("            \::.    /                 ")
+    print("             '::. .'                  ")
+    print("               ) (                    ")
+    print("             _.'_'._                  ")
+    print("")
+    print("")
+    return
