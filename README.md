@@ -12,7 +12,7 @@ __coding__
 #2 put your solutions here
 #1b durcharbeiten https://repl.it/community/classrooms/17929 (parallel online challenge)
 
-#3 + #6 Coding Projects
+#3 + #4 Coding Projects
 * Anforderungen + Github Projekt + Coden
 
 --> Spezialtask: #3 Challenge soll parallel zum Coding lernen laufen
