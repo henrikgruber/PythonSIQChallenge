@@ -1,0 +1,18 @@
+#Given the two integers, print the least of them.
+#Example input
+#3
+#7
+#Example output
+#3
+
+
+# Read an integer:
+# a = int(input())
+# Print a value:
+# print(a)
+
+
+If you don't know how to start solving this assignment, please, review a theory for this lesson:
+https://www.learnpython.org/en/Conditions
+You may also try step-by-step theory chunks:
+https://snakify.org/lessons/if_then_else_conditions/
