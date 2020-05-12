@@ -3,6 +3,7 @@
 First Try for a company wide Python-Agile challenge
 
 TODO
+* install GitHub Client (and add the repository)
 * Install anaconda and spyder as IDE (local on your PC)
 * or get started right away: https://repl.it/
 
