@@ -6,10 +6,10 @@ TODO
 * or get started right away: https://repl.it/
 
 
-coding
+__coding__
 #1 do these challenges
 #2 put your solutions here
-# 1b durcharbeiten https://repl.it/community/classrooms/17929 (parallel online challenge)
+#1b durcharbeiten https://repl.it/community/classrooms/17929 (parallel online challenge)
 
 #3 + #6 Coding Projects
 * Anforderungen + Github Projekt + Coden
