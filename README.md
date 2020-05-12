@@ -1,4 +1,3 @@
-[![Run on Repl.it](https://repl.it/badge/github/SIQClassroomPython/python-coding-challenges)](https://repl.it/github/SIQClassroomPython/python-coding-challenges)
 
 # PythonSIQChallenge
 First Try for a company wide Python-Agile challenge
