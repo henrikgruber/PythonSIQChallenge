@@ -12,5 +12,5 @@ num3 = input("Please tell me a third number (int): ")
 result = int(num1) + int(num2) + int(num3)
 
 print("Thank you!")
-print("Let me now sum these numbers up for you:")
+print("Let me now sum up these numbers for you:")
 print(result)
