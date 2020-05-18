@@ -2,19 +2,19 @@
 
 
 k=input("Sage mir für den wievielten Tag des Jahres ich dir den Wochentag nennen soll?")
-Wochentagzahl= int(4) + int(k)%7-1
+Wochentagzahl= (int(k) + int(3)) %7
 
-if Wochentagzahl == 8:
+if Wochentagzahl == 1:
     print("Montag")
 
-elif Wochentagzahl == 9:
+elif Wochentagzahl == 2:
     print("Dienstag")
 
-elif Wochentagzahl == 7:
+elif Wochentagzahl == 0:
     print("Sonntag")
 
 elif Wochentagzahl == 4:
-    print(Donnerstag)
+    print("Donnerstag")
 
 elif Wochentagzahl == 5:
     print("Freitag")
