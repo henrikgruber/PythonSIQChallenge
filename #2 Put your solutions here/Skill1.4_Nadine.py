@@ -5,19 +5,19 @@ Created on Wed May 13 16:35:19 2020
 @author: nadine.spormann
 """
 
-# 0 — Sunday   --> Index: 3
-# 1 — Monday   --> Index: 4
-# 2 — Tuesday  --> Index: 5
-# 3 — Wednesday--> Index: 6
-# 4 — Thursday --> Index: 0
-# 5 — Friday   --> Index: 1
-# 6 — Saturday --> Index: 2
+# 0 — Sunday   --> Rest: 3
+# 1 — Monday   --> Rest: 4
+# 2 — Tuesday  --> Rest: 5
+# 3 — Wednesday--> Rest: 6
+# 4 — Thursday --> Rest: 0
+# 5 — Friday   --> Rest: 1
+# 6 — Saturday --> Rest: 2
 # January 1 was Thursday
 
 list_days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 k = input("Please enter any number between 1 and 365: ")
-week_day = int(k) % 7
+week_day = (int(k) % 7) - 1
 
 if week_day == 0:
     print(4)

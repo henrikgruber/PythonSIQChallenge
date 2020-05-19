@@ -1,8 +1,9 @@
 import setup
 import results
 import datetime
+import import_modules
 
-
+import_modules.auto_install()
 
 
 # (1) Welcome to the App
