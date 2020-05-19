@@ -10,8 +10,8 @@ if day in range(365):
     print (week[rest])
 else:
     print ("Number out of range. Enter da number between 1-365")
-    
-    
+
+  
 
 
 

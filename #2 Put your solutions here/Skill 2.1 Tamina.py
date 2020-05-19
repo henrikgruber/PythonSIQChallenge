@@ -19,3 +19,4 @@ except ValueError:
         print("Input is a float  number. Please enter an integer. Number = ", val)
     except ValueError:
         print("You have to enter a number.")
+        

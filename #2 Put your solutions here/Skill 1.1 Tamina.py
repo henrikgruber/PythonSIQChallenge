@@ -6,3 +6,4 @@ c = int(input ("Enter another number: "))
 print("Sum of the entered numbers: " + str(a+b+c))
 
 
+
