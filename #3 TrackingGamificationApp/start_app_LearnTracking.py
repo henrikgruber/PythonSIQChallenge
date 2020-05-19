@@ -1,4 +1,4 @@
-import setup
+import Setup
 import results
 import datetime
 import import_modules
@@ -35,9 +35,9 @@ input("Let us start. Hit any key. ")
 
 
 # (1) initialize all data
-v_person = setup.initialize_person()
-v_category = setup.initialize_category()
-v_confidence = setup.initialize_confidence()
+v_person = Setup.initialize_person()
+v_category = Setup.initialize_category()
+v_confidence = Setup.initialize_confidence()
 
 
 # (3) write results
