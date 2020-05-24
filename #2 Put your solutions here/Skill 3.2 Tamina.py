@@ -2,7 +2,9 @@
 
 x = int( input ("Please enter a number: "))
 y = int (input  ("Please enter another number: "))
-if (x > 0) or (y > 0):
+if (x > 0) and (y < 0):
+    print ("YES")
+elif (x < 0) and (y > 0):
     print ("YES")
 else: 
     print ('No')
