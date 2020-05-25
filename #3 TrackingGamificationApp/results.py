@@ -1,6 +1,7 @@
 # pandas is being used for dataframes (loading all data from survey results)
 import pandas
 
+
 # matplotlib is neccesary for creating statistical diagrams based on former surveys
 import matplotlib.pyplot as plt
 
