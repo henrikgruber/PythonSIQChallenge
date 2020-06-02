@@ -1,4 +1,4 @@
-import Setup
+import setup
 import results
 import datetime
 import import_modules
