@@ -3,7 +3,7 @@ import pandas
 
 
 # matplotlib is neccesary for creating statistical diagrams based on former surveys
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # squarify is necessary for creating a treemap diagram
 # import squarify as sq
