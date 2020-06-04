@@ -6,7 +6,7 @@ import pandas
 import matplotlib.pyplot as plt
 
 # squarify is necessary for creating a treemap diagram
-import squarify as sq
+# import squarify as sq
 
 def write_results(p_person,p_category,p_confidence,p_date):
     df_write = pandas.DataFrame({'\n\nPerson': [p_person],
@@ -16,6 +16,9 @@ def write_results(p_person,p_category,p_confidence,p_date):
     df_write.to_csv('tracking_results.csv', mode='a', header=False,index=False)
     return
 
+
+
+"""
 def create_diagrams():
     tracking_results = pandas.read_csv('tracking_results.csv')
     
@@ -76,6 +79,7 @@ def create_diagrams():
     plt.show()
     
     return
+"""
 
 def motivational_booster():
     print("")

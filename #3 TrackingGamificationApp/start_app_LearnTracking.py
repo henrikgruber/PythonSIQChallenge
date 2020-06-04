@@ -35,16 +35,16 @@ input("Let us start. Hit any key. ")
 
 
 # (1) initialize all data
-v_person = Setup.initialize_person()
-v_category = Setup.initialize_category()
-v_confidence = Setup.initialize_confidence()
+v_person = setup.initialize_person()
+v_category = setup.initialize_category()
+v_confidence = setup.initialize_confidence()
 
 
 # (3) write results
 results.write_results(v_person,v_category,v_confidence,datetime.datetime.now().strftime("%y-%m-%d-%H-%M"))
 
 # (6) Plot statistical results via diagrams
-results.create_diagrams()
+#results.create_diagrams()
 
 # (7) motivational booster
 results.motivational_booster()
