@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Wed May 13 14:45:30 2020
 
@@ -14,3 +13,5 @@ result = int(num1) + int(num2) + int(num3)
 print("Thank you!")
 print("Let me now sum up these numbers for you:")
 print(result)
+
+
