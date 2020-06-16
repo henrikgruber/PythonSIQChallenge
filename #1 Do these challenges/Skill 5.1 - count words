@@ -1,0 +1,21 @@
+#Given a string "Hello World" . Determine how many words it has. 
+
+# Then create a new string "This is my life." and count number of characters 'i' it has and print it out.
+
+#Example input
+#Hello world
+
+#Example output
+
+#2
+
+# String a has 3 characters i
+
+
+
+-------
+solution:
+      string = 'Hello World'
+print ('String has ' + str(len(string.split())) + ' words.')
+string_new = 'This is my life'
+print ('String_new has ' + str(string_new.count('i')) + ' characters i.')

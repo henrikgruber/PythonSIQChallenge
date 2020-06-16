@@ -1,0 +1,21 @@
+#Given a string. Replace in this string all the numbers 1 by the word one.
+
+#Example input
+
+#1+1=2
+
+#Example output
+#one+one=2
+
+# Read a string:
+# s = input()
+# Print a string:
+# print(s)
+
+
+
+-----
+Solution:
+
+      s = '1+1=2'
+print(s.replace('1', 'one'))
