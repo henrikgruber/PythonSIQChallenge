@@ -1,0 +1,26 @@
+#Write a Python program to print next 5 days starting from today
+
+#Sample Output:
+#2017-05-06 12:27:53.632939
+#2017-05-07 12:27:53.632939
+#2017-05-08 12:27:53.632939
+#2017-05-09 12:27:53.632939
+#2017-05-10 12:27:53.632939  
+
+-----
+Solution:
+
+
+      import datetime 
+date = datetime.datetime.now()
+print(date)
+print(date + datetime.timedelta(days=1))
+print(date + datetime.timedelta(days=2))
+print(date + datetime.timedelta(days=3))
+print(date + datetime.timedelta(days=4))
+
+    
+    
+      
+  
+            

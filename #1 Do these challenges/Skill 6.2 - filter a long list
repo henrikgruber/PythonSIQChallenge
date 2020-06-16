@@ -1,0 +1,25 @@
+"""Write a function filter_long_words() that takes a list of words and an integer n and returns the list of words that are longer than n.""" 
+
+def filter_long_words(lst, n): 
+  return 
+  
+#test 
+print (filter_long_words(['Hello', 'world', 'Haiti', 'Pythonistas!'], 5))
+
+
+Solution
+-------
+      """Write a function filter_long_words() that takes a list of 
+words and an integer n and returns the list of words that are longer than n.""" 
+
+def filter_long_words(lst:list, n:int): 
+    new_lst = []
+    for word in lst:
+        if len(word) > n:
+            new_lst.append(word)
+    return new_lst
+  
+#test 
+print (filter_long_words(['Hello', 'world', 'Haiti', 'Pythonistas!'], 5))
+  
+            

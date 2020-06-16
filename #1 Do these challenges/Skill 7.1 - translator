@@ -1,0 +1,56 @@
+"""Represent a small bilingual lexicon as a Python dictionary in the 
+following fashion {"merry":"god", "christmas":"jul", "and":"och", 
+"happy":gott", "new":"nytt", "year":"ar"} and use it to translate 
+your Christmas cards from English into Swedish. 
+
+That is, write a function translate() that takes a list of English words and returns 
+a list of Swedish words.
+
+As output: you should have list of all swedish words 
+OUTPUT: ['god', 'jul', 'och', 'gott', 'nytt', 'ar']
+
+"""
+
+dictionary = {"merry":"god", "christmas":"jul", "and":"och", 
+"happy":"gott", "new":"nytt", "year":"ar"}
+
+def translate(lst):
+  
+
+#test
+print (translate(['Merry', 'christmas', 'and', 'happy', 'new', 'year', 'mom']))
+
+
+-----
+Solution
+
+
+      """Represent a small bilingual lexicon as a Python dictionary in the 
+following fashion {"merry":"god", "christmas":"jul", "and":"och", 
+"happy":gott", "new":"nytt", "year":"ar"} and use it to translate 
+your Christmas cards from English into Swedish. 
+
+That is, write a function translate() that takes a list of English words and returns 
+a list of Swedish words.
+
+As output: you should have list of all swedish words 
+OUTPUT: ['god', 'jul', 'och', 'gott', 'nytt', 'ar']
+
+"""
+
+def translate(lst):
+    dictionary = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"ar", "mom":"mamma"}
+    trans_sent = []
+    for word in lst:
+        trans_sent.append(dictionary.get(str(word).lower()))
+        #lowercase
+    return trans_sent
+
+#test
+print (translate(['Merry', 'christmas', 'and', 'happy', 'new', 'year', 'mom']))
+
+    
+    
+      
+  
+            

@@ -1,0 +1,28 @@
+1) Your task 
+
+# create a file named hello.txt (for writing)
+# write this text inside "a line of text", "another line of text", "a third line"
+# and then close the file
+
+#fh = open
+#lines_of_text 
+#fh.writelines(lines_of_text)
+#fh.close()
+
+
+
+
+Solution
+-------
+
+
+      
+
+    fh = open("hello.txt", "w")
+lines_of_text = ["a line of text", "another line of text", "a third line"]
+fh.writelines(["%s\n" % item  for item in lines_of_text])
+fh.close()
+    
+      
+  
+            

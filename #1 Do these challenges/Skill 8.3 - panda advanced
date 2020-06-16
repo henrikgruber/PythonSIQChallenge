@@ -1,0 +1,95 @@
+# Use jupyter notebook again
+# we will use data set from kaggle on us-baby-names
+# dataset is here:
+# https://raw.githubusercontent.com/mslyon/testone/master/US_Baby_Names_right.csv
+#Import the necessary libraries
+import pandas as pd
+
+#import the dataset from the above address / best is to download it locally
+
+# TASK 1: Assign it to a variable called baby_names
+
+# TASK 1: Assign it to a variable called baby_names
+
+# TASK 2: Check the info with .info()
+
+# TASK 3: Check head with head()
+
+# TASK 4: Delete the column 'Unnamed: 0' and 'Id'
+
+# lets so you delete sum the Year column, 
+del baby_names["Year"]
+
+# TASK 5: Group the dataset by name and assign to names
+# use .groupby("Name").sum()
+
+# TASK 6: sort from the biggest value to the smallest one / use .sort_values
+
+# TASK 7: as we have already grouped by the name, all the names are unique already. 
+# get the length of names - use len
+
+# TASK 8: What is the name with most occurrences?
+
+
+-----
+Solution:
+
+
+      # Use jupyter notebook again
+# we will use data set from kaggle on us-baby-names
+# dataset is here:
+# https://raw.githubusercontent.com/mslyon/testone/master/US_Baby_Names_right.csv
+#Import the necessary libraries
+import pandas as pd
+
+#import the dataset from the above address / best is to download it locally
+#Import the necessary libraries
+
+
+#url = 'https://raw.githubusercontent.com/mslyon/testone/master/US_Baby_Names_right.csv'
+url = 'Downloads/US_Baby_Names_right.csv'
+
+# TASK 1: Assign it to a variable called baby_names
+# TASK 1: Assign it to a variable called baby_names
+Baby_Names = pd.read_csv(url)
+
+# TASK 2: Check the info with .info()
+Baby_Names.info()
+
+# TASK 3: Check head with head()
+Baby_Names.head()
+
+# TASK 4: Delete the column 'Unnamed: 0' and 'Id'
+Baby_Names = Baby_Names.drop(Baby_Names.columns[[0, 1]], axis=1)
+
+# lets so you delete sum the Year column, 
+Baby_Names = Baby_Names.drop('Year', 1)
+
+# TASK 5: Group the dataset by name and assign to names
+# use .groupby("Name").sum()
+Baby_Names['names'] = Baby_Names.groupby('Name', sort=False)["Name"].transform('count')
+#Baby_Names['names'] = Baby_Names.groupby('Name').sum('count')
+
+# TASK 6: sort from the biggest value to the smallest one / use .sort_values
+#Baby_Names.sort_values
+Baby_Names.sort_values(by="Name")
+
+# TASK 7: as we have already grouped by the name, all the names are unique already. 
+# get the length of names - use len
+Baby_Names['Name_length'] = Baby_Names['Name'].apply(len)
+
+# TASK 8: What is the name with most occurrences?
+#MaxFrequency_perWord.columns = ['Name']
+Baby_Names.Name.str.split(',', expand=True).stack().value_counts().head(1)
+
+
+    
+    
+      
+  
+            
+    
+    
+      
+  
+            
