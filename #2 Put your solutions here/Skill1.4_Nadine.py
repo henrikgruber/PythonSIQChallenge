@@ -20,9 +20,9 @@ k = input("Please enter any number between 1 and 365: ")
 week_day = (int(k) % 7) - 1
 
 if week_day == 0:
-    print(4)
+    print(list_days[4])
 elif week_day == 1:
-    print(5)
+    print(list_days[5])
 elif week_day == 2:
     print(6)
 elif week_day == 3:
@@ -33,3 +33,11 @@ elif week_day == 5:
     print(2)
 else: 
     print(3)
+jkldfsafs
+adfjdsaf
+adsfjads
+fdsa
+F
+Sajf
+
+Sunday

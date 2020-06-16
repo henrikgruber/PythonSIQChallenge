@@ -96,3 +96,7 @@ def motivational_booster():
     print("")
     print("")
     return
+
+
+
+motivational_booster()

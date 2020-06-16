@@ -2,7 +2,7 @@
 
 
 k=input("Sage mir für den wievielten Tag des Jahres ich dir den Wochentag nennen soll?")
-Wochentagzahl= (int(k) + int(3)) %7
+Wochentagzahl= (int(k) + 3) %7
 
 if Wochentagzahl == 1:
     print("Montag")
