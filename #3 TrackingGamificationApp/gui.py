@@ -3,14 +3,21 @@ from tkinter import *
 #.pack() Funktion -> Zeile wird Mittig dargestellt 
 #global Funktion -> um die Variable in anderen Funktionen auch aufrufen zu können
 
-#Funktion nur für den Test der Gui angelegt
-def register_person(): # Funktion für die Registrierung einer Person
+#Funktion nur für den Test der Gui angelegt - muss mit tatsächlicher Funktion ersetzt werden
+def register_person(): 
     print("Registration started")
+    user = username.get()
+    pw = username.get()
+    print("REGISTRATION - Username: " + user + " Password:" + pw)
   
-#Funktion nur für den Test der Gui angelegt 
-def login_person(): # Funktion für die Registrierung einer Person
-    print("Registration started")
-    
+#Funktion nur für den Test der Gui angelegt - muss mit tatsächlicher Funktion ersetzt werden
+def login_person(): 
+    print("Login started")
+    user= username.get()
+    pw = username.get()
+    print("LOGIN - Username: " + user + " Password:" + pw)
+
+
 # Funktion für den Aufruf des Registrierungs Screens, die tatsächliche Registerierung erfolgt in einer andern Funktion 
 def register():
     #screen settings
@@ -42,7 +49,12 @@ def login():
     login_screen = Toplevel(main_screen)
     login_screen.title("Learn Tracking App Login")
     login_screen.geometry('300x250')
-     
+    
+    global username 
+    global password 
+    global username_entry
+    global password_entry
+    
     #Variablen deklarieren
     username = StringVar() #muss dann entsprechend der Benutzernamen generierung hier umgeschrieben werden
     password = StringVar() #muss dann entsprechend der Passwort generierung hier umgeschrieben werden
